@@ -1,18 +1,53 @@
-<html> <!-- Etiqueta raiz -->
+<html lang="estudiante"> 
 
-<head> <!-- ino sobre la pagina-->
-    <title>Mi web</title> <!-- titulo de la pagina-->
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi web</title> 
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <!--Parte visible de la pagina-->
-    <h1> hola mundo </h1>
-    <h2> hola mundo </h2>
-    <h3> hola mundo </h3>
-    <h4> hola mundo </h4>
-    <h5> hola mundo </h5>
-    <h6> hola mundo </h6>
-    <p> Estamos aprendiendo </p>
-</body>
+   <header>
+    <h1> ¡Hola, Soy estudiante de programacion </h1>
+    <nav> 
+        <a href="#sobremi"> Sobre mi</a>
+        <a href="#contacto">Contacto</a>
+        <a href="https://google.com">Google</a>
+    </nav>
+     <main> 
+        <section id="sobremi">
+            <h2> Sobre mi </h2>
+            <p> Me gusta programar, y me gusta aprender</p>
+        </section>
 
+        <article>
+            <h2> My hobby</h2>
+            <p> Uno de mis pasatiempos es estar con mi coneja Yura</p>
+        </article>
+        <section id="Contacto">
+            <h2> Contactame</h2>
+            <form>
+                <label for= "nombre" > Nombre: </label><br>
+                <input type="text" name="nombre" id="nombre"><br><br>
+                <label for="correo" >Correo </label><br>
+                <input type="text" name="correo" id="correo"><br><br>
+
+                <label for="mensaje">Mensaje</label><br>
+                <textarea name="mensaje" id="mensaje" rows="4" cols="30">
+                </textarea> <br><br>
+
+                <button type="submit"> Enviar </button>
+
+
+            </form>
+
+        </section>
+     </main>
+     <footer>
+        <p> &copy; 2025 Juliana Morales</p>
+    </footer>
+   </header>
+</body>
+   
 </html>
